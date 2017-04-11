@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">"LanzaBolas "</string>
+    <string name="pes1String">Lanza bolas</string>
+    <string name="pes2String">Modificar bola</string>
+</resources>
