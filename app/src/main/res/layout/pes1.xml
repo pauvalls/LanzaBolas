@@ -20,39 +20,40 @@
             />
 
         <TextView
-            android:text="Angulo"
+            android:text="0"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/textView3"
-            android:layout_marginBottom="28dp"
+            android:layout_alignTop="@+id/textview123"
+            android:layout_toEndOf="@+id/textview123"
+            android:layout_marginStart="34dp"
+            android:id="@+id/velx" />
+
+        <TextView
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/vely"
             android:layout_above="@+id/Joystick"
+            android:layout_alignStart="@+id/velx"
+            android:layout_marginBottom="40dp" />
+
+        <TextView
+            android:text="Velocidad Y :"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textview321"
+            android:layout_alignBaseline="@+id/vely"
+            android:layout_alignBottom="@+id/vely"
             android:layout_alignParentStart="true" />
 
         <TextView
-            android:text="0"
+            android:text="Velocidad X: "
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/potencia"
-            android:layout_alignBaseline="@+id/textView4"
-            android:layout_alignBottom="@+id/textView4"
-            android:layout_alignEnd="@+id/angulo" />
-
-        <TextView
-            android:text="Potencia"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView4"
-            android:layout_above="@+id/textView3"
+            android:layout_marginBottom="14dp"
+            android:id="@+id/textview123"
+            android:layout_above="@+id/textview321"
             android:layout_alignParentStart="true" />
-
-        <TextView
-            android:text="0"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/angulo"
-            android:layout_below="@+id/potencia"
-            android:layout_toEndOf="@+id/textView4"
-            android:layout_marginStart="16dp" />
 
     </RelativeLayout>
 
