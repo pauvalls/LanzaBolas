@@ -11,32 +11,157 @@ android:paddingTop="@dimen/activity_vertical_margin"
 tools:context="pauvallsmoreno.lanzabolas.MainActivity"
     android:background="@drawable/background">
 
-
-<android.support.v4.app.FragmentTabHost
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:id="@+id/tabHost">
-
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="match_parent">
 
-        <TabWidget
-            android:id="@android:id/tabs"
+        <TextView
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/posXmain"
+            android:layout_marginStart="70dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/textView" />
+
+        <TextView
+            android:text="Posición X:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView4"
+            android:layout_marginStart="24dp"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/velx" />
+
+        <io.github.controlwear.virtual.joystick.android.JoystickView
+            android:id="@+id/Joystick"
+            xmlns:custom="http://schemas.android.com/apk/res-auto"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"></TabWidget>
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/radar"
+            custom:JV_buttonImage="@drawable/ball"
 
-        <FrameLayout
-            android:id="@android:id/tabcontent"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            />
 
+        <TextView
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textview123"
+            android:layout_toEndOf="@+id/textview123"
+            android:id="@+id/velx" />
 
+        <TextView
+            android:text="Velocidad X: "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textview123"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
 
+        <TextView
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/vely"
+            android:layout_alignBaseline="@+id/textview321"
+            android:layout_alignBottom="@+id/textview321"
+            android:layout_alignStart="@+id/velx" />
 
+        <TextView
+            android:text="Posición Y:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            android:layout_alignBaseline="@+id/vely"
+            android:layout_alignBottom="@+id/vely"
+            android:layout_alignStart="@+id/textView4" />
 
-        </FrameLayout>
-    </LinearLayout>
-</android.support.v4.app.FragmentTabHost>
+        <TextView
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/posYmain"
+            android:layout_alignBaseline="@+id/textView"
+            android:layout_alignBottom="@+id/textView"
+            android:layout_toEndOf="@+id/textView4" />
+
+        <TextView
+            android:text="Velocidad Y :"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textview321"
+            android:layout_below="@+id/textview123"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="11dp" />
+
+        <TextView
+            android:text="Radio:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/posXmain"
+            android:layout_marginStart="35dp"
+            android:id="@+id/textView9" />
+
+        <TextView
+            android:text="Masa:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/posYmain"
+            android:layout_alignEnd="@+id/textView9"
+            android:id="@+id/textView10" />
+
+        <TextView
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView10"
+            android:layout_alignStart="@+id/RadioMain"
+            android:id="@+id/masaMain" />
+
+        <TextView
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/RadioMain"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/textView9" />
+
+        <TextView
+            android:text="Tipo de pelota:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textview321"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="25dp"
+            android:id="@+id/textView13" />
+
+        <TextView
+            android:text="Añadir en ajustes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView13"
+            android:layout_toEndOf="@+id/textView13"
+            android:id="@+id/tipobolamain" />
+
+        <TextView
+            android:text="Pantalla seleccionada:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView13"
+            android:layout_alignParentStart="true"
+            android:id="@+id/textView15" />
+
+        <TextView
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tipobolamain"
+            android:id="@+id/pantallaMain"
+            android:layout_toEndOf="@+id/textView15" />
+
+    </RelativeLayout>
+
 </LinearLayout>

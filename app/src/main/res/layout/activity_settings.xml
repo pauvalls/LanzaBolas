@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:weightSum="1">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_weight="1.00">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="480dp">
+
+        <TextView
+            android:text="Radio:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radio"
+            android:textSize="24sp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <SeekBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/barradio"
+            android:layout_below="@+id/numberradio"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:text="masa: "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:textSize="24sp"
+            android:layout_below="@+id/barradio"
+            android:layout_alignParentStart="true" />
+
+        <SeekBar
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/barmasa"
+            android:layout_below="@+id/textView2"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/numbermasa"
+            android:textSize="24sp"
+            android:layout_below="@+id/barradio"
+            android:layout_toEndOf="@+id/textView2" />
+
+        <TextView
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/numberradio"
+            android:textSize="24sp"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/textView2" />
+
+        <TextView
+            android:text="PosiciónX:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/posXenvio"
+            android:layout_below="@+id/barmasa"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/numbermasa" />
+
+        <SeekBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/posXenvio"
+            android:layout_alignParentStart="true"
+            android:id="@+id/posX"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:text="Posición Y:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView21"
+            android:layout_below="@+id/posX"
+            android:layout_alignParentStart="true" />
+
+        <SeekBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView21"
+            android:layout_alignParentStart="true"
+            android:id="@+id/posY"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:text="Tipo de bola"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView22"
+            android:layout_below="@+id/posY"
+            android:layout_alignParentStart="true" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner"
+            android:layout_below="@+id/textView22"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:text="Pantalla seleccionada"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinner"
+            android:layout_alignParentStart="true"
+            android:id="@+id/textView23" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner2"
+            android:layout_below="@+id/textView23"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/posxnum"
+            android:layout_below="@+id/barmasa"
+            android:layout_toEndOf="@+id/posXenvio" />
+
+        <TextView
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/posY"
+            android:layout_toEndOf="@+id/textView21"
+            android:id="@+id/posynum" />
+
+
+    </RelativeLayout>
+
+    </ScrollView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/guardar"
+        android:onClick="guardardatos"
+        android:layout_below="@+id/barradio"
+        android:layout_centerHorizontal="true"
+        android:text="Guardar" />
+</LinearLayout>
