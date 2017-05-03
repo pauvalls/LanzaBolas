@@ -68,15 +68,6 @@
             android:layout_alignParentTop="true"
             android:layout_toEndOf="@+id/textView2" />
 
-        <TextView
-            android:text="PosiciónX:"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/posXenvio"
-            android:layout_below="@+id/barmasa"
-            android:layout_alignParentStart="true"
-            android:layout_toStartOf="@+id/numbermasa" />
-
         <SeekBar
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -84,14 +75,6 @@
             android:layout_alignParentStart="true"
             android:id="@+id/posX"
             android:layout_alignParentEnd="true" />
-
-        <TextView
-            android:text="Posición Y:"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView21"
-            android:layout_below="@+id/posX"
-            android:layout_alignParentStart="true" />
 
         <SeekBar
             android:layout_width="wrap_content"
@@ -107,7 +90,8 @@
             android:layout_height="wrap_content"
             android:id="@+id/textView22"
             android:layout_below="@+id/posY"
-            android:layout_alignParentStart="true" />
+            android:layout_alignParentStart="true"
+            android:textSize="24sp" />
 
         <Spinner
             android:layout_width="match_parent"
@@ -122,14 +106,8 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/spinner"
             android:layout_alignParentStart="true"
-            android:id="@+id/textView23" />
-
-        <Spinner
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/spinner2"
-            android:layout_below="@+id/textView23"
-            android:layout_alignParentStart="true" />
+            android:id="@+id/textView23"
+            android:textSize="24sp" />
 
         <TextView
             android:text="0"
@@ -137,7 +115,8 @@
             android:layout_height="wrap_content"
             android:id="@+id/posxnum"
             android:layout_below="@+id/barmasa"
-            android:layout_toEndOf="@+id/posXenvio" />
+            android:layout_toEndOf="@+id/posXenvio"
+            android:textSize="24sp" />
 
         <TextView
             android:text="0"
@@ -145,7 +124,51 @@
             android:layout_height="wrap_content"
             android:layout_above="@+id/posY"
             android:layout_toEndOf="@+id/textView21"
-            android:id="@+id/posynum" />
+            android:id="@+id/posynum"
+            android:textSize="24sp" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinerFila"
+            android:layout_below="@+id/textView3"
+            android:layout_alignStart="@+id/textView3"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:text="Fila seleccionada"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView3"
+            android:layout_below="@+id/spinerpantalla"
+            android:layout_alignParentStart="true"
+            android:textSize="24sp" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinerpantalla"
+            android:layout_below="@+id/textView23"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:text="PosiciónX:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/posXenvio"
+            android:layout_alignBaseline="@+id/posxnum"
+            android:layout_alignBottom="@+id/posxnum"
+            android:layout_alignParentStart="true"
+            android:textSize="24sp" />
+
+        <TextView
+            android:text="Posición Y:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView21"
+            android:layout_below="@+id/posX"
+            android:layout_alignParentStart="true"
+            android:textSize="24sp" />
 
 
     </RelativeLayout>
