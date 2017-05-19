@@ -146,30 +146,12 @@ tools:context="pauvallsmoreno.lanzabolas.MainActivity"
             android:layout_alignParentStart="true" />
 
         <TextView
-            android:text="0"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/masaMain"
-            android:layout_alignBaseline="@+id/textView10"
-            android:layout_alignBottom="@+id/textView10"
-            android:layout_alignStart="@+id/RadioMain" />
-
-        <TextView
-            android:text="Masa:"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView10"
-            android:layout_alignBaseline="@+id/posYmain"
-            android:layout_alignBottom="@+id/posYmain"
-            android:layout_toStartOf="@+id/masaMain" />
-
-        <TextView
-            android:text="Radio:"
+            android:text="      Radio:"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/textView9"
             android:layout_alignParentTop="true"
-            android:layout_toStartOf="@+id/masaMain" />
+            android:layout_toEndOf="@+id/posXmain" />
 
         <TextView
             android:text="0"
@@ -177,8 +159,7 @@ tools:context="pauvallsmoreno.lanzabolas.MainActivity"
             android:layout_height="wrap_content"
             android:id="@+id/RadioMain"
             android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginEnd="12dp" />
+            android:layout_toEndOf="@+id/textView9" />
 
     </RelativeLayout>
 
